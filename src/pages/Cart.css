@@ -1,0 +1,162 @@
+.cart-page {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cart-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Empty cart */
+.cart-empty {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cart-empty h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.cart-empty p {
+  color: #666;
+}
+
+.cart-empty a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #ff6600;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Layout */
+.cart-container {
+  display: flex;
+  gap: 30px;
+}
+
+.cart-items {
+  flex: 2;
+}
+
+/* Item */
+.cart-item {
+  display: flex;
+  gap: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cart-img {
+  width: 90px;
+  height: 90px;
+  background: #eee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.cart-price {
+  font-weight: 600;
+  color: #ff6600;
+}
+
+/* Quantity */
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-qty button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #ff6600;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-qty span {
+  font-size: 14px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Remove */
+.remove-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Summary */
+.cart-summary {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  height: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Checkout */
+.checkout-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #ff6600;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+  }
+}
