@@ -10,7 +10,7 @@
   padding: 0 80px;
 
   /* 🔥 BACKGROUND IMAGE */
-  background-image: url("src/assets/banner.jpg");
+  background-image: url("/images/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
