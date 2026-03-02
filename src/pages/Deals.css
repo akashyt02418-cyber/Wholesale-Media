@@ -1,0 +1,89 @@
+.deals-container {
+  padding: 40px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.deals-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.deal-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-8px);
+}
+
+.deal-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.deal-info {
+  padding: 20px;
+}
+
+.deal-info h2 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.old-price {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.buy-btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #444;
+}
+
+@media (max-width: 768px) {
+  .deals-title {
+    font-size: 24px;
+  }
+}
